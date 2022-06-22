@@ -1,0 +1,34 @@
+.container
+   .wrapper
+      section.top-nav
+         div.logo
+            img(src="../../images/logo.png", alt="")
+         input#menu-toggle(type='checkbox')
+         label.menu-button-container(for='menu-toggle')
+            .menu-button
+         ul.menu
+            li 
+               a(href="#")  Home
+            li 
+               a(href="#")  About
+            li 
+               a(href="#")  Features
+            li 
+               a(href="#")  Blog
+            li 
+               a(href="#")  Pricing
+            li 
+               a(href="#")  Contact
+            label.dropdown
+               .dd-button
+                  .flag-img 
+                     +image('english')
+                     span English
+               input#test.dd-input(type='checkbox')
+               ul.dd-menu
+                  li English
+                  li Russian
+                  li lithuanian
+            .btn Download
+
+                  

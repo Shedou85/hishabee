@@ -1,0 +1,34 @@
+include pug/libs/_libs
+
+doctype html
+html(lang='en')
+
+    include pug/_head
+    body
+        header 
+            include pug/section/header  
+        main 
+         
+            section.section1
+                include pug/section/section1
+            section.section2    
+                include pug/section/section2    
+            section.section3 
+                include pug/section/section3
+            section.section4 
+                include pug/section/section4
+            section.section5 
+                include pug/section/section5   
+            section.section6 
+                include pug/section/section6  
+            section.section7
+                include pug/section/section7      
+            section.section8
+                include pug/section/section8  
+            section.section9
+                include pug/section/section9 
+                   
+        footer 
+            
+            include pug/section/footer
+            script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', integrity='sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM', crossorigin='anonymous')

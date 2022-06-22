@@ -1,0 +1,108 @@
+@import '../global';
+.hero {
+   max-width: 1138px;
+   margin: 0 auto;
+}
+.section2-title {
+   margin-bottom: 39px;
+   .section2-title-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h3 {
+         font-weight: 700;
+         font-size: 36px;
+         line-height: 44px;
+      }
+   }
+   p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(27, 28, 31, 0.75);
+      max-width: 1001px;
+   }
+}
+//Cards
+.cards {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 359px;
+   background: #FFFFFF;
+   box-shadow: 0px 4px 34px rgba(27, 28, 31, 0.1);
+   border-radius: 20px;
+   padding: 32px 43px;
+   .div-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 64px;
+      height: 64px;
+      background-color: $secondaryColor;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      .fa {
+         color: white;
+      }
+   }
+   .card-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 16px;
+   }
+   .card-subtitle {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(27, 28, 31, 0.75);
+   }
+}
+.parent {
+   display: grid; 
+   grid-template-columns: 1fr 1fr 1fr; 
+   grid-template-rows: 1.6fr 1.4fr 0.1fr; 
+   gap: 24px 0px;
+   margin-bottom: 70px;
+   grid-template-areas: 
+     "div1 div5 div3"
+     "div2 div5 div4"
+     "div6 div6 div6"; 
+ }
+ .div1 {
+   align-self: stretch; 
+   grid-area: div1; 
+ }
+ .div2 { grid-area: div2; }
+ .div3 { grid-area: div3; }
+ .div4 { grid-area: div4; }
+ .div5 {
+   justify-self: center; 
+   align-self: stretch; 
+   grid-area: div5; 
+ }
+ .div6 { grid-area: div6; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+.button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 133px;
+   height: 56px;
+   background: #1B1C1F;
+   box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+   border-radius: 6px;
+   a {
+      color: white;
+      &:hover {
+         color: $secondaryColor;
+      }
+   }
+ }
+}
